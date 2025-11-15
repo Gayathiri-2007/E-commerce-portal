@@ -1,0 +1,122 @@
+/* Base */
+:root{
+  --bg: #0b1220;
+  --panel: #0f1730;
+  --text: #e6eefc;
+  --muted: #a9b7d9;
+  --brand: #2ea0ff;
+  --brand-600:#1b79cc;
+  --accent: #5be1ff;
+  --success:#2ecc71;
+  --danger:#ff6b6b;
+  --shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  color:var(--text);
+  background:#060a14;
+  line-height:1.6;
+}
+
+.container{
+  width:100%;
+  max-width:1120px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* Header */
+.site-header{
+  position:sticky; top:0; z-index:20;
+  backdrop-filter:saturate(180%) blur(10px);
+  background:rgba(6,10,20,.6);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.header-inner{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 0;
+}
+.brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text)}
+.brand-text{font-weight:700; letter-spacing:.3px}
+.site-nav{display:flex; align-items:center; gap:18px}
+.site-nav a{color:var(--muted); text-decoration:none}
+.site-nav a:hover{color:var(--text)}
+
+/* Hero */
+.hero{padding:80px 0 60px; background:radial-gradient(1200px 500px at 60% -50%, rgba(46,160,255,.25), transparent 60%), radial-gradient(900px 400px at 0% -20%, rgba(91,225,255,.15), transparent 60%)}
+.hero-inner{display:grid; grid-template-columns:1fr; gap:20px}
+.hero-copy h1{font-size: clamp(28px, 5vw, 44px); line-height:1.15; margin:0 0 12px}
+.hero-copy p{color:var(--muted); margin:0 0 20px}
+.hero-cta{display:flex; gap:12px; flex-wrap:wrap}
+
+/* Sections */
+.section{padding:56px 0}
+.section-muted{background:linear-gradient(0deg, rgba(255,255,255,.02), rgba(255,255,255,0))}
+.section h2{font-size: clamp(22px, 3.5vw, 32px); margin:0 0 18px}
+
+/* Buttons */
+.btn{display:inline-block; border:1px solid rgba(255,255,255,.14); padding:10px 14px; border-radius:10px; color:var(--text); text-decoration:none; transition:all .2s ease; background:transparent}
+.btn:hover{transform:translateY(-1px); border-color:rgba(255,255,255,.3)}
+.btn-primary{background:linear-gradient(135deg, var(--brand), var(--brand-600)); border-color:transparent}
+.btn-primary:hover{filter:brightness(1.05)}
+
+/* Product Grid */
+.product-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:18px}
+.card{background:var(--panel); border:1px solid rgba(255,255,255,.06); border-radius:14px; padding:16px; box-shadow:var(--shadow); display:flex; flex-direction:column}
+.card-img{width:100%; aspect-ratio: 4 / 3; object-fit:cover; border-radius:10px; margin-bottom:12px; background:#0a1228; border:1px solid rgba(255,255,255,.06)}
+.card h3{margin:0 0 4px}
+.card .role{color:var(--muted); margin:0 0 8px}
+.price{font-weight:800; margin:6px 0 12px}
+.card p{margin:0 0 16px; color:var(--muted)}
+.card .actions{margin-top:auto}
+.features{margin:0 0 12px 18px; color:var(--muted)}
+.features li{margin:4px 0}
+
+/* Contact */
+.contact-form{display:grid; gap:14px; max-width:680px}
+.form-row{display:grid; gap:6px}
+label{color:var(--muted)}
+input, textarea{
+  background:#0a1228; color:var(--text);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:10px; padding:12px;
+}
+input:focus, textarea:focus{outline:2px solid var(--brand); outline-offset:2px}
+.form-actions{display:flex; align-items:center; gap:12px; flex-wrap:wrap}
+.form-note{color:var(--muted); margin:0}
+.form-feedback{margin-top:12px; color:var(--accent)}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(255,255,255,.06); background:#070b16}
+.footer-inner{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 0}
+.footer-links{display:flex; gap:14px}
+.footer-links a{color:var(--muted); text-decoration:none}
+.footer-links a:hover{color:var(--text)}
+
+/* Why / FAQ */
+.why-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:16px; margin-top:12px}
+.why-item{background:#0a1228; border:1px solid rgba(255,255,255,.06); border-radius:12px; padding:14px}
+.why-item h3{margin:0 0 6px}
+.faq{background:#0a1228; border:1px solid rgba(255,255,255,.06); border-radius:12px; padding:12px 14px; margin:10px 0}
+.faq summary{cursor:pointer; font-weight:600}
+
+/* Responsive tweaks */
+@media (min-width: 900px){
+  .hero{padding:110px 0 80px}
+}
+
+/* Mobile-first tweaks */
+@media (max-width: 600px){
+  .header-inner{padding:12px 0}
+  .site-nav{gap:12px}
+  .hero{padding:56px 0 40px}
+  .hero-cta .btn{width:100%; text-align:center}
+  .section{padding:40px 0}
+  .product-grid{grid-template-columns: 1fr}
+}
+
+

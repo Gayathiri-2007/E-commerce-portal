@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Horizon Scout — Advanced Drone Systems</title>
+    <meta name="description" content="Horizon Scout designs and manufactures professional drones for rescue, delivery, agriculture, survey, and security.">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="Horizon Scout home">
+          <span class="brand-text">Horizon Scout</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="btn btn-primary">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-heading">Aerial systems engineered for real‑world missions</h1>
+            <p>Horizon Scout builds reliable, high‑performance drones for emergency response, logistics, agriculture, surveying, and security.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#products">Explore Products</a>
+              <a class="btn" href="#contact">Talk to us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section" aria-labelledby="products-heading">
+        <div class="container">
+          <h2 id="products-heading">Our Drones</h2>
+          <div id="product-grid" class="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-muted" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 id="about-heading">About Horizon Scout</h2>
+          <p>
+            Horizon Scout is a drone manufacturing company focused on mission‑critical performance and safety.
+            Our platforms combine rugged airframes, intelligent flight systems, and modular payloads to deliver
+            results across emergency response, delivery, agriculture, surveying, and security operations.
+          </p>
+          <div class="why-grid">
+            <div class="why-item"><h3>Reliability</h3><p>Ruggedized builds, tested for demanding climates and long duty cycles.</p></div>
+            <div class="why-item"><h3>Safety</h3><p>Redundant sensors, geofencing, and failsafe RTH to protect people and payloads.</p></div>
+            <div class="why-item"><h3>Support</h3><p>Onboarding, training, and maintenance plans designed for enterprise uptime.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section" aria-labelledby="faq-heading">
+        <div class="container">
+          <h2 id="faq-heading">FAQ</h2>
+          <details class="faq"><summary>Do you provide pilot training?</summary><div>Yes. We offer on‑site and remote training tailored to your mission profile.</div></details>
+          <details class="faq"><summary>What’s the typical lead time?</summary><div>Standard configurations ship in 2–3 weeks; custom payloads may vary.</div></details>
+          <details class="faq"><summary>Can we integrate custom payloads?</summary><div>Absolutely. Our modular bays and SDK support a wide range of sensors.</div></details>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading">Contact</h2>
+          <p>Have a question or need a quote? Send us a message.</p>
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send</button>
+              <p class="form-note">We respect your privacy. Your details are used only to respond to your enquiry.</p>
+            </div>
+          </form>
+          <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Horizon Scout. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="git.js" defer></script>
+  </body>
+</html>
+
